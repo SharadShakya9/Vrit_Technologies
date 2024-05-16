@@ -11,6 +11,8 @@
     <h1>Your Score: <span id="score">0</span></h1>
 
     <script>
+      const BOARD_WIDTH = 500;
+      const BOARD_HEIGHT = 500;
       let score = 0;
       var scoreElement = document.getElementById("score");
 
@@ -22,8 +24,8 @@
       };
 
       moveMosquito = () => {
-        let top = Math.floor(Math.random() * (500 - 100));
-        let left = Math.floor(Math.random() * (500 - 100));
+        let top = Math.floor(Math.random() * (BOARD_HEIGHT - 100));
+        let left = Math.floor(Math.random() * (BOARD_WIDTH - 100));
 
         var gameArea = document.getElementById("game-board");
         var mosquito = document.createElement("img");
