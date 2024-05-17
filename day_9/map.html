@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      const productList = [
+        {
+          name: "Adidas",
+          imagePath: "./adidas.png",
+          price: 200,
+          size: "x1",
+          stock: 10,
+          color: ["red", "blue", "white"],
+        },
+        {
+          name: "Adidas",
+          imagePath: "./adidas.png",
+          price: 200,
+          size: "x1",
+          stock: 10,
+          color: ["red", "blue", "white"],
+        },
+        {
+          name: "Adidas",
+          imagePath: "./adidas.png",
+          price: 200,
+          size: "x1",
+          stock: 10,
+          color: ["red", "blue", "white"],
+        },
+      ];
+
+      productList.map((item) => {
+        let divref = document.getElementById("container");
+        let element = document.createElement("p");
+        let element1 = document.createElement("p");
+        let element2 = document.createElement("p");
+        let card = document.createElement("div")
+
+        element.textContent = item.name;
+        element1.textContent = item.price;
+        element2.textContent = item.stock;
+
+        card.appendChild(element);
+        card.appendChild(element1);
+        card.appendChild(element2);
+        divref.appendChild(card)
+      })
+
+      /*const colors = ["red", "green", "blue", "white"];
+
+      colors.map((item) => {
+        console.log("item", item);
+        let divref = document.getElementById("container");
+        let element = document.createElement("p");
+
+        element.textContent = item;
+        divref.appendChild(element);
+
+        //assignment: add all color items to the div container
+      });*/
+    </script>
+  </body>
+</html>
