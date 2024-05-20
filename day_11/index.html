@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11</title>
+</head>
+<body>
+    <div>Promises</div>
+
+    <script>
+
+        makePayment = () => {
+            
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (true) {
+                    reject("Payment Failed")
+                }
+
+                }, 3000)
+            })
+        }
+
+        downloadTicket = () => {
+            //
+        }
+
+        makePayment().then((res) => {
+            downloadTicket()
+        }).catch((error) => {
+            console.error('ee', error)
+        })
+    </script>
+</body>
+</html>
