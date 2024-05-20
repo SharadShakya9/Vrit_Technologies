@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Function</title>
+</head>
+<body>
+    <h1>Promises</h1>
+
+    <script>
+
+        makePayment = (user) => {
+            //Higher Order Function: Function as a parameter and function as return value
+            if(checkPermission(user)) {
+                return downloadTicket()
+            }
+
+            return ("Permission not granted")
+        }
+
+        downloadTicket = () => {
+            return 'Ticket'
+        }
+
+        checkPermission = (username) => {
+
+            if(username==='roshan') {
+                return true
+            }
+
+            return false
+        }
+
+        console.log(makePayment('roshan'))
+    </script>
+</body>
+</html>

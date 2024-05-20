@@ -15,7 +15,7 @@
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     if (true) {
-                    reject("Payment Failed")
+                        resolve("Payment Failed")
                 }
 
                 }, 3000)
@@ -23,14 +23,20 @@
         }
 
         downloadTicket = () => {
-            //
+            console.log("Ticket")
         }
 
         makePayment().then((res) => {
             downloadTicket()
         }).catch((error) => {
-            console.error('ee', error)
+            console.error('ee', 'Failed')
+        }).finally(() => {
+            console.log('Final')
         })
+
+        fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        .then(console.log);
     </script>
 </body>
 </html>
