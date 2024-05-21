@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    
+    <div>
+        <input id="num1" onchange="getInputFieldOne()" type="number" />
+        <input id="num2" onchange="getInputFieldOne()" type="number" />
+
+    </div>
+    <button onclick="getResult()" id="calculate">=</button>
+    <div id="result">
+        <p id="finalResult">0</p>
+    </div>
+
+    <script>
+
+        getInputFieldOne = () => {
+            var num1 = document.getElementById('num1')
+            var num2 = document.getElementById('num2')
+            console.log('num1', typeof(num1.value))
+            console.log('num1', typeof(num2.value))
+            const calc = new Calculator()
+            console.log('add: ', calc.add(parseInt(num1.value), parseInt(num2.value)))
+        }
+        
+        getResult = () => {
+            var res = document.getElementById('finalResult')
+            var num1 = document.getElementById('num1')
+            var num2 = document.getElementById('num2')
+            const calc = new Calculator()
+            res.innerHTML = calc.add(parseInt(num1.value), parseInt(num2.value))
+        }
+
+        class Calculator {
+
+            add = (num1, num2) => {
+                return num1+num2
+            }
+            subtract = (num1, num2) => {
+                return num1-num2
+            }
+            multiply = (num1, num2) => {
+                return num1*num2
+            }
+
+            
+        }
+
+        const calc = new Calculator()
+        
+
+    </script>
+</body>
+</html>

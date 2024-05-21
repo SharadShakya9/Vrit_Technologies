@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: solid 2px pink;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

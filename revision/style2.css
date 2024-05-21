@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: solid 2px pink;
+    border-radius: 10px;
+}
