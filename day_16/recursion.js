@@ -50,7 +50,7 @@ fibo = (num) => {
 }
 
 var list = []
-let  n = 5
+let  n = 10
 for(let i = 1; i <= n; i++) {
     list.push(fibo(i))
 }

@@ -1,0 +1,24 @@
+Generator Function:
+    -Can pause the function execution
+
+Async function:
+    -
+
+Temporary DeadZone:
+    -Phase between Hoisting and Initialization
+    -let and const are not initialized here
+
+Topics to cover in JS:
+    -JavaScript Closure
+    -JavaScript Inheritances/OOP Concepts
+    -JavaScript Event Loops
+    -JavaScript Callback Functions
+    -JavaScript Async/Await and Promises
+    -JavaScript Functional Programming
+    -JavaScript High-Order Functions
+    -JavaScript Generators
+    -JavaScript Hoisting
+    -JavaScript IIFEs
+    -JavaScript Memoization
+    -JavaScript Currying
+    -Prototyper Inheritance
