@@ -1,0 +1,25 @@
+JS model:
+    -Declaration phase & Execution phase
+    -Single thread, yet performs asynchronous actions
+
+Microtask queue (Priority queue):
+    -Promise functions
+
+Call Stack:
+    -Normal functions
+    -Filled by nested functions
+    -Callback Hell: Long nested functions fill to the limit of the call stack
+
+Lexical Environment:
+    -A function wrapped together with its sibling properties
+    -Use case: React function composition, Writing test case
+
+Function is a first class region; takes input and gives output
+
+Event Loops:
+    -Located between queue and call stack
+    -Continuously listens queue, if there is a function in queue, the event loop puts the function in the call stack
+    -Helps in asynchronous programming
+
+Higher Order Function:
+    -The function that takes a function as parameter and returns function as well
