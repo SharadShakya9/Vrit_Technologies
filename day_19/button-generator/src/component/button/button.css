@@ -1,0 +1,19 @@
+.submit {
+  background-color: greenyellow;
+  color: white;
+}
+
+.download {
+  background-color: lightblue;
+  color: white;
+}
+
+.cancel {
+  background-color: red;
+  color: white;
+}
+
+.export {
+  background-color: orange;
+  color: white;
+}
