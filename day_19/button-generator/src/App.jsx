@@ -1,14 +1,13 @@
 import "./App.css";
-import ButtonFactory from "./component/button";
+import ButtonFactory from "./component/button/ButtonFactory";
 
 function App() {
   return (
     <>
       <ButtonFactory />
       <ButtonFactory type="download" />
-      <ButtonFactory type="export"/>
-      <ButtonFactory type="submit"/>
-      <ButtonFactory type="cancel"/>
+      <ButtonFactory type="home"/>
+      <ButtonFactory type="settings"/>
     </>
   );
 }
