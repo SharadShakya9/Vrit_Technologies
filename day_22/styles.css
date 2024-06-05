@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    width: 123px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 35%;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.img > img {
+    width: 29px;
+    height: 29px;
+}
+
+.button {
+    background: white;
+    width: 150px;
+    height: 44px;
+    border-radius: 100px;
+    border: 2px solid red;
+}
+
+.dark-mode {
+    color: white;
+    background: black;
+}

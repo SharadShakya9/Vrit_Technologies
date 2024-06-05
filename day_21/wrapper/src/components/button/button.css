@@ -1,0 +1,25 @@
+button {
+    width: 50px;
+    height: 30px;
+}
+
+.settings {
+    background-color: greenyellow;
+    color: white;
+  }
+  
+  .download {
+    background-color: lightblue;
+    color: white;
+  }
+  
+  .cancel {
+    background-color: red;
+    color: white;
+  }
+  
+  .home {
+    background-color: orange;
+    color: white;
+  }
+  
