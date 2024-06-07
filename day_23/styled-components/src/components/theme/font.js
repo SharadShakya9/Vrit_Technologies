@@ -1,3 +1,3 @@
 export const font = {
-    primary: 'string'
+    primary: 'sans-serif'
 }

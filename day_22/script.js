@@ -1,6 +1,7 @@
 const body = document.body
 const logoText = document.getElementById('logo')
 const navbarElement = document.getElementById('navbar')
+const lightButton = document.getElementById('img-in')
 
 window.onload = () => {
     let themeValue = localStorage.getItem("theme") === 'true'
@@ -20,7 +21,9 @@ changeBackground = () => {
 function toggleTheme(themeValue) {
     if (themeValue) {
         body.classList.add('dark-mode')
+        lightButton.src = "./assets/moon.png"
     } else {
         body.classList = ""
+        lightButton.src = "./assets/sun.png"
     }
 }

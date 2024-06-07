@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navbar" class="navbar">
-        <div class="logo">
-            <a id="logo" href="#">Logo.</a>
-        </div>
+      <div class="logo">
+        <a id="logo" href="#">Logo.</a>
+      </div>
 
-        <div class="links">
-            <a>Home</a>
-            <a>About Us</a>
-            <a>Contact Us</a>
-        </div>
+      <div class="links">
+        <a>Home</a>
+        <a>About Us</a>
+        <a>Contact Us</a>
+      </div>
 
-        <div class="end">
-            <div class="img" onclick="changeBackground()"><img src="./assets/sun.png" alt="light"></div>
-            <button class="button">Get in touch</button>
+      <div class="end">
+        <div class="img" onclick="changeBackground()">
+          <img id="img-in" alt="light" />
         </div>
+        <button class="touch-button">Get in touch</button>
+      </div>
     </nav>
 
+    <section class="container">
+      <div class="content">
+        <div class="text">
+          <p class="big-text">
+            <span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit
+          </p>
+          <p class="small-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="button">
+          <button class="know-me-button">Know Me</button>
+        </div>
+        
+      </div>
+
+      <div class="chat">
+        <img src="./assets/message-text.svg" alt="">
+      </div>
+    </section>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

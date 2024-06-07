@@ -1,61 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+    height: 100vh;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid black;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    width: 123px;
-    height: 70px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 123px;
+  height: 70px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo > a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.dark-mode .logo > a {
+    color: white;
 }
 
 .links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    width: 35%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 35%;
 }
 
 .end {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .img > img {
-    width: 29px;
-    height: 29px;
+  width: 29px;
+  height: 29px;
 }
 
-.button {
-    background: white;
-    width: 150px;
-    height: 44px;
-    border-radius: 100px;
-    border: 2px solid red;
+.touch-button {
+  background: transparent;
+  width: 150px;
+  height: 44px;
+  border-radius: 100px;
+  border: 2px solid red;
 }
+
+.dark-mode .touch-button {
+    color: white;
+}
+
+
 
 .dark-mode {
+  color: white;
+  background: black;
+}
+
+.container {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./assets/he_sitting_with_notebook.png);
+    background-size: 46%;
+    background-position: center right 170px;
+    background-repeat: no-repeat;
+}
+
+.content {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    width: 659px;
+    height: 90vh;
+    margin-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.big-text {
+    height: 252px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+    
+}
+
+.big-text > span {
+    color: #FF0013;
+    font-weight: 700;
+}
+
+.small-text {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #363636;
+}
+
+.dark-mode .small-text {
     color: white;
-    background: black;
+}
+
+.know-me-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 88px;
+    gap: 8px;
+    width: 245px;
+    height: 64px;
+    background: #FF0013;
+    border-radius: 16px;
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    color: white;
+    border: none;
+}
+
+.chat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0013;
+    border-radius: 13px;
 }

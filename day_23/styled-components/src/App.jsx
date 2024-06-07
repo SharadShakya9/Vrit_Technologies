@@ -3,11 +3,10 @@ import React, { useEffect, useState } from "react";
 import CardFactory from "./components/card/CardFactory";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/theme";
-import image from "./assets/image.png";
 import axios from "axios";
 
 function App() {
-  const [themeState, setThemeState] = useState(false);
+  // const [themeState, setThemeState] = useState(false);
   const [data, setData] = useState([]);
 
   function fetchData() {
@@ -17,7 +16,7 @@ function App() {
         setData(response?.data?.products);
       })
       .catch(function (error) {
-        console.log(error, "");
+        console.log(error);
       });
   }
 
@@ -25,30 +24,30 @@ function App() {
     fetchData();
   }, []);
 
-  const toggleTheme = () => {
-    setThemeState(!themeState);
-  };
+  // const toggleTheme = () => {
+  //   setThemeState(!themeState);
+  // };
 
   return (
     <ThemeProvider theme={theme}>
       <div
         style={{
           display: "flex",
-          flexWrap:"wrap",
           gap: "20px",
           width: "100%",
-          height: "100vh",
-          background: `${themeState ? "black" : "white"}`,
+          height: "100%",
+          background: "white",
+          flexWrap: "wrap",
         }}
       >
-        {/* <button onClick={toggleTheme}>Switch</button> */}
-        {data?.map((item) => {
+        {data?.map((item) => (
           <CardFactory
-            title={`${item.title}`}
-            description={`${item.description}`}
-            imagePath={`${item.images[0]}`}
-          />;
-        })}
+            key={`${item?.id}`}
+            imagePath={`${item?.images[0]}`}
+            title={`${item?.title}`}
+            description={`${item?.description}`}
+          />
+        ))}
       </div>
     </ThemeProvider>
   );
